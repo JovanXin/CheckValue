@@ -13,6 +13,9 @@ def checkvalue(prompt,data_type): #ensures user types a str or int
       value = int(value) #tries to convert "value" to a integer
       if "num" in data_type or "int" in data_type:
         return value
+      print("Please enter a string")
+
     except ValueError:
       if "str" in data_type:
         return value
+      print("Please enter a number")
