@@ -1,6 +1,6 @@
-from checkvalue import *
+from checkvalue import checkvalue
 
-num = checkvalue(1)
-a_string = checkvalue()
+year = checkvalue("When were you born", "int") #"int" can also be "num" or anything with letters int/num in it
+print(year)
 
-print(num, a_string)
+name = checkvalue("What is your name?","str") #"str" can also be "string" or anything with letters str in it
